@@ -1,0 +1,8 @@
+// Dark Theme Mixins
+@mixin theme($themeColor) {
+    @if $themeColor == dark {
+        @media (prefers-color-scheme: dark) {
+            @content;
+        }
+    }
+}

@@ -1,0 +1,35 @@
+/* Import SCSS partials from different directories */
+
+/* Abstracts */
+@use "abstracts";
+
+/***************
+1. Base 
+****************/
+@use "base";
+
+/***************
+2. Components 
+****************/
+@use "components";
+
+/***************
+3. Layout 
+****************/
+@use "layout";
+
+/***************
+4. Pages 
+****************/
+@use "pages";
+
+/***************
+5. Theme 
+****************/
+@use "theme";
+
+/* Additional global styles, if any */
+// @import 'global-styles';
+
+/* Your custom styles, if any */
+// @import 'custom-styles';
