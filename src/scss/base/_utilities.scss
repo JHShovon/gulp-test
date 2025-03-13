@@ -3,3 +3,18 @@
 * Utilities
 ***************************************/
 /* Useful utility systems - Utility classes we like to use in most of our projects to build faster. */
+.size-44{
+    width: 44px;
+    height: 44px;
+}
+
+.rounded-full{
+    border-radius: 50%;
+}
+
+.img-cover{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center;
+}

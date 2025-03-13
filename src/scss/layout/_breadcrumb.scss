@@ -1,0 +1,63 @@
+@use "abstracts" as *;
+
+
+.breadcrumb-area{
+    position: relative;
+    padding-block: 95px 60px;
+    overflow: hidden;
+
+    @include breakpoint(large){
+        padding-block: 115px 80px;
+    }
+    @include breakpoint(xlarge){
+        padding-block: 156px 120px;
+    }
+    @include breakpoint(xxlarge){
+        padding-block: 196px 160px;
+    }
+}
+.breadcrumb-wrapper{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    z-index: 1;
+    color: $white-color;
+    text-align: center;
+}
+
+.breadcrumb{
+    justify-content: center;
+
+    &-item{
+        color: $secondary-color;
+        text-transform: capitalize;
+        & + &::before{
+            color: $white-color;
+        }
+        &.active{
+            color: $white-color;
+        }
+    }
+}
+
+.breadcrumb-bg-block{
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: -1;
+    width: 100%;
+    height: 100%;
+
+    &::after{
+        position: absolute;
+        inset: 0;
+        background-color: rgba($primary-color, 0.9);
+        content: "";
+    }
+
+    img:nth-child(2){
+        position: absolute;
+        top: 0;
+        right: 0;
+    }
+}
